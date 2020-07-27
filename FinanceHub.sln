@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanceHub", "src\Web.API\FinanceHub.csproj", "{47461260-B87C-4D55-A6A1-B5D96DE91AF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web.API", "Web.API", "{7B758D59-0EFF-436C-8A54-341B6637DE94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DB1E96C7-8D07-44E6-A72A-8F4160EB22BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{847BA60B-894E-40F5-9358-F67F52D26D92}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinnHub.Client", "src\FinnHub.Client\FinnHub.Client.csproj", "{2B19A8A2-9E57-47BC-A856-CAFD0CE15500}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47461260-B87C-4D55-A6A1-B5D96DE91AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47461260-B87C-4D55-A6A1-B5D96DE91AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47461260-B87C-4D55-A6A1-B5D96DE91AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47461260-B87C-4D55-A6A1-B5D96DE91AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B19A8A2-9E57-47BC-A856-CAFD0CE15500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B19A8A2-9E57-47BC-A856-CAFD0CE15500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B19A8A2-9E57-47BC-A856-CAFD0CE15500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B19A8A2-9E57-47BC-A856-CAFD0CE15500}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47461260-B87C-4D55-A6A1-B5D96DE91AF2} = {7B758D59-0EFF-436C-8A54-341B6637DE94}
+		{7B758D59-0EFF-436C-8A54-341B6637DE94} = {DB1E96C7-8D07-44E6-A72A-8F4160EB22BC}
+		{2B19A8A2-9E57-47BC-A856-CAFD0CE15500} = {DB1E96C7-8D07-44E6-A72A-8F4160EB22BC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {936BB9E3-37A9-46D8-BA0F-EF97970D7CA4}
+	EndGlobalSection
+EndGlobal
