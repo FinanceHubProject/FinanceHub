@@ -103,7 +103,7 @@ namespace ThreeFourteen.Finnhub.Client
             var from = fromDate.ToString("yyyy-MM-dd");
             var to = toDate.ToString("yyyy-MM-dd");
 
-            return await _finnhubClient.SendAsync<NewsEntry[]>("/company-news", JsonDeserialiser.Default,
+            return await _finnhubClient.SendAsync<NewsEntry[]>("company-news", JsonDeserialiser.Default,
                 new Field(FieldKeys.Symbol, symbol),
                 new Field(FieldKeys.From, from),
                 new Field(FieldKeys.To, to));
