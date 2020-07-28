@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
+using FinanceHub.Models;
+using FinanceHub.Services;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +32,7 @@ namespace FinanceHub
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -52,6 +57,8 @@ namespace FinanceHub
 
             //DatasourceManager datasourceManager = new DatasourceManager(finhubbApiKey);
             services.AddSingleton<IDatasourceManager, DatasourceManager>();
+
+            services.AddSingleton<IWatchlistService, WatchlistService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
