@@ -27,5 +27,12 @@ namespace FinanceHub.Controllers
         {
             return await _datasourceManager.GetQuoteAsync(symbol).ConfigureAwait(false);
         }
+
+
+        [HttpGet("/timeseries/{symbol}")]
+        public async Task<ActionResult<string>> GetTimeSeriesDaily(string symbol)
+        {
+            return await _datasourceManager.GetTimeSeriesDaily(symbol).ConfigureAwait(false);
+        }
     }
 }
