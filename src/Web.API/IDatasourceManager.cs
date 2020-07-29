@@ -9,5 +9,6 @@ namespace FinanceHub
     public interface IDatasourceManager
     {
        Task<Quote> GetQuoteAsync(string symbol);
+        Task<string> GetTimeSeriesDaily(string symbol);
     }
 }
